@@ -18,3 +18,27 @@ font-family: Arial, Helvetica, sans-serif;
 line-height: 1.4;
 
 }
+.jumbotron {
+    background: transparent;
+    
+  }
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 580%;
+}
+h4 {
+    cursor: url("../src/assets/images/my-cursor1.png"), auto;
+
+}
+
+.content {
+    background: rgba(255,252,234,0.8);
+    width: 90%;
+    padding: 5%;
+    padding-top: 3%;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px #8899;     
+}
+.btn {
+    border-radius: 50px;
+}
