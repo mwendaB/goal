@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Goal } from '../goal';
 
 @Component({
   selector: 'app-goal-form',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GoalFormComponent implements OnInit {
 
-  constructor() { }
+ 
+  newGoal = new Goal(0,"","",newDate());
+@Output() addGoal = new EventEmitter<Goal>();
 
-  ngOnInit(): void {
+  submitGoal(){
+this.addGoal.emit(this.newGoal);
+  }
+
+  ngOnInit() {
   }
 
 }
